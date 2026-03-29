@@ -4,12 +4,12 @@ from .models import Course, Lesson, Instructor, Learner,Question, Choice, Submis
 
 # <HINT> Register QuestionInline and ChoiceInline classes here
 class ChoiceInline(admin.StackedInline):
-	model = Choice
-	extra = 2
+    model = Choice
+    extra = 2
 
 class QuestionInline(admin.StackedInline):
     model = Question
-	extra = 2
+    extra = 2
 
 
 class LessonInline(admin.StackedInline):
